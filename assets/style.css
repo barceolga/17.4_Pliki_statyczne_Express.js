@@ -37,8 +37,10 @@ body {
   font-weight: 600;
   padding: 10px;
   color: #fff;
-  background-color: #006699;
-  text-align: center;
+  background-color: #33bbff;
+  text-align: right;
+  margin-left: 15px;
+
 }
 
 .form .form_submit {
