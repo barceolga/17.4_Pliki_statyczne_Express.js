@@ -3,7 +3,7 @@ var bodyParser = require ('body-parser');
 var app = express();
 
 app.use(express.static('assets'));
-app.use(express.static('files'));
+
 
 app.get('/', function (req, res) {
   res.sendFile('/index.html')
@@ -17,10 +17,7 @@ app.get('/userform', function (req, res) {
     };
     res.end(JSON.stringify(response));
 })
-/*
-app.get('/style.css', funtcion (req, res)  {
 
-})*/
 
 var server = app.listen(3000, 'localhost', function() {
    var host = server.address().address;
